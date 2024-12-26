@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "TOUR HÀ NỘI | ĐẢO NGỌC PHÚ QUỐC",
+      "price": 7999000,
+      "hot": 1,
+      "image": "hanoi.jpg",
+      "category": "Trong nước"
+    },
+    {
+      "id": "2",
+      "name": "TOUR CẦN THƠ | NHA TRANG | ĐÀ LẠT",
+      "price": 2999000,
+      "image": "cantho.jpg",
+      "category": "Trong nước"
+    },
+    {
+      "id": "3",
+      "name": "TOUR TÀ CÚ | HÀM THUẬN NAM",
+      "price": 2999000,
+      "image": "binhthuan.jpg",
+      "category": "Trong nước"
+    },
+    {
+      "id": "4",
+      "name": "TOUR ĐẢO BALI | KHÁM PHÁ NUSA PENIDA",
+      "price": 10999000,
+      "hot": 1,
+      "image": "bali.jpg",
+      "category": "Nước ngoài"
+    },
+    {
+      "id": "5",
+      "name": "TOUR DUBAI | ABU DHABI | BAY EMIRATES",
+      "price": 32999000,
+      "image": "dubai.jpg",
+      "category": "Nước ngoài"
+    },
+    {
+      "id": "6",
+      "name": "TOUR VĨNH HY | NHA TRANG | VỊNH NHA PHU",
+      "price": 2686000,
+      "image": "nhatrang.jpg",
+      "hot": 1,
+      "category": "Trong nước"
+    }
+  ],
+  "user": [
+    {
+      "id": "73db",
+      "name": "nguyễn phước vinh",
+      "email": "nguyenphuocvinh051204@gmail.com",
+      "password": "123"
+    }
+  ]
+}

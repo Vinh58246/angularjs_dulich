@@ -1,0 +1,191 @@
+<div class="container">
+    <div class="row">
+        <h1 class="text-primary my-4">Tổng quan về chuyến đi</h1>
+        <div class="col-lg-8">
+            <h4 class="mb-3">Thông tin liên lạc</h4>
+            <div class="bg-body-secondary p-4 mb-4">
+            <div class="row g-2 mb-2">
+                <div class="col-md p-3">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingInputGrid" placeholder="" value="Nguyễn Văn A">
+                      <label for="floatingInputGrid">Họ tên</label>
+                    </div>
+                </div>
+                <div class="col-md p-3">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+                      <label for="floatingInputGrid">Email address</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-md p-3">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="0987654321">
+                      <label for="floatingInputGrid">Số điện thoại</label>
+                    </div>
+                </div>
+                <div class="col-md p-3">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="floatingInputGrid" placeholder="12/34, aa,bb" value="mdo@example.com">
+                      <label for="floatingInputGrid">Địa chỉ</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <h4 class="mb-3">Hành khách</h4>
+            <div class="form-group mb-4">
+                  <div class="passenger-type">
+                    <div class="row g-3 mx-1">
+                        <div class="d-flex border border-dark p-3 align-items-center">
+                        <div class="col-4">
+                            <h6>Người lớn</h6>
+                        </div>
+                        <div class="col-8 d-flex justify-content-end">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementValue('quantity')">-</button>
+                            <input type="text" class="form-control w-25 text-center mx-3" id="quantity" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementValue('quantity')">+</button>
+                        </div>
+                        </div>
+                        <!-- <div class="col-2"></div> -->
+                        
+                        <div class="d-flex border border-dark p-3 align-items-center">
+                            <div class="col-4">
+                                <h6>Trẻ em <span class="text-body-tertiary">(2 - 11 tuổi)</span></h6>
+                            </div>
+                            <div class="col-8 d-flex justify-content-end">
+                                <button class="btn btn-outline-secondary" type="button" onclick="decrementValue('quantity')">-</button>
+                                <input type="text" class="form-control w-25 text-center mx-3" id="quantity" value="1">
+                                <button class="btn btn-outline-secondary" type="button" onclick="incrementValue('quantity')">+</button>
+                            </div>
+                        </div>
+
+                        <div class="d-flex border border-dark p-3 align-items-center">
+                            <div class="col-4">
+                                <h6>Em bé <span class="text-body-tertiary">(dưới 2 tuổi)</span></h6>
+                            </div>
+                            <div class="col-8 d-flex justify-content-end">
+                                <button class="btn btn-outline-secondary" type="button" onclick="decrementValue('quantity')">-</button>
+                                <input type="text" class="form-control w-25 text-center mx-3" id="quantity" value="1">
+                                <button class="btn btn-outline-secondary" type="button" onclick="incrementValue('quantity')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mb-3">Thông tin hành khách</h4>
+            <h6>Quý khách có ghi chú lưu ý gì, hãy nói với chúng tôi!</h6>
+            <div class="bg-body-secondary p-4 mb-4">
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Hút thuốc</label>
+                          </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Ăn chay</label>
+                          </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Ở tầng cao</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Phụ nữ có thai</label>
+                          </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Có người khuyết tật</label>
+                          </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">Trẻ em hiếu động</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ghi chú thêm"></textarea>
+                  </div>
+            </div>
+
+            <div class="bg-body-secondary p-4 mb-4">
+                <p>Bằng cách nhấp chuột vào nút "ĐỒNG Ý" dưới đây, Khách hàng đồng ý rằng các
+                     Điều kiện điều khoản này sẽ được áp dụng. Vui lòng đọc kỹ Điều kiện điều
+                      khoản trước khi lựa chọn sử dụng dịch vụ của Lửa Việt Tours.</p>
+            <div class="form-check d-flex justify-content-center">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">Tôi đã đọc và đồng ý với <a href="">Điều khoản thanh toán</a></label>
+                </div>
+            </div>
+
+            <h4 class="mb-3">Phương thức thanh toán</h4>
+            <div class="mx-3 mb-4">
+                <div class="row ">
+                <div class="form-check mb-2">
+                    <input class="form-check-input fs-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label fw-bold" for="flexRadioDefault1"><i class="bi bi-bag-check fs-5"></i> Thanh toán tại văn phòng Happy Tour</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input fs-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label fw-bold" for="flexRadioDefault1"><i class="bi bi-house-door fs-5"></i> Thu tiền tại nhà</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input fs-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label fw-bold" for="flexRadioDefault1"><i class="bi bi-bank fs-5"></i> Thanh toán qua Ngân Hàng</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input fs-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label fw-bold" for="flexRadioDefault1"><i class="bi bi-cash-coin fs-5"></i> Thanh toán qua MOMO</label>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card p-4">
+                <p><i class="bi bi-upc-scan"></i> Mã tour: <span class="fw-bold">CHÂU ÚC 6N5Đ | SYDNEY – MELBOURNE</span></p>
+                <div class="card-title fw-bold fs-5">CHÂU ÚC 6N5Đ | SYDNEY – MELBOURNE</div>
+                <p>01/09/2024 -> 06/09/2024</p>
+                <hr class="mb-4">
+                <div class="row mb-3">
+                    <div class="col-lg-6">Người lớn:</div>
+                    <div class="col-lg-6 fw-bold text-end">0 VNĐ</div>
+                </div>
+                <div class="row mb-3 ">
+                    <div class="col-lg-6">Trẻ em:</div>
+                    <div class="col-lg-6 fw-bold text-end">0 VNĐ</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-6">Em bé:</div>
+                    <div class="col-lg-6 fw-bold text-end">0 VNĐ</div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-6 fw-bold">Phòng đơn:</div>
+                    <div class="col-lg-6 fw-bold text-end">0 VNĐ</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-6 text-danger fw-bold">Tổng cộng:</div>
+                    <div class="col-lg-6 fw-bold text-end text-danger">0 VNĐ</div>
+                </div>
+                <button class="text-white btn btn-danger">Đặt ngay</button>
+            </div>
+        </div>
+    </div>
+</div>

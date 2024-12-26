@@ -1,0 +1,38 @@
+<form class="container mb-4" name="registrationForm" ng-submit="submitForm()" novalidate>
+    <img class="mt-2" width="150px" src="./img/2.png" alt="">
+    <div class="p-3">
+      <h1 class="fs-3 fw-bold">Đăng kí</h1>
+      <p>Nhận tài khoản Klook và khám phá niềm vui của bạn ở bất cứ đâu</p>
+    </div>
+    <hr>
+    <div class="p-3">
+      <div class="">
+        <div class="mb-3 w-50">
+          <label for="name" class="form-label">Họ tên</label>
+          <input type="text" class="form-control rounded" name="name" ng-model="name" required placeholder="Nguyễn Văn A">
+          <span class="text-danger" ng-show="registrationForm.name.$touched && registrationForm.name.$invalid">Vui lòng nhập họ tên</span>
+        </div>
+        <div class="mb-3 w-50">
+          <label for="email" class="form-label" >Email</label>
+          <input type="text" class="form-control rounded" name="email" ng-model="email" required placeholder="abc@xyz.com">
+          <span class="text-danger" ng-show="registrationForm.email.$touched && registrationForm.email.$invalid">Vui lòng nhập email</span>
+
+        </div>
+        <div class="col-12 mb-3 w-50">
+          <label for="password" class="form-label">Mật khẩu</label>
+          <input type="text" class="form-control rounded" name="password" ng-model="password" required  placeholder="********">
+          <span class="text-danger" ng-show="registrationForm.password.$touched && registrationForm.password.$invalid">Vui lòng nhập mật khẩu</span>
+        </div>
+        <div class="col-12 mb-3 w-50">
+            <label for="repassword" class="form-label">Nhập lại mật khẩu</label>
+            <input type="text" class="form-control rounded" name="repassword" ng-model="repassword" required placeholder="********">
+            <span class="text-danger" ng-show="registrationForm.repassword.$touched && registrationForm.repassword.$invalid">Vui lòng nhập mật khẩu</span>
+            <span class="text-danger" ng-show="password !== repassword && registrationForm.repassword.$touched">Mật khẩu không trùng khớp</span>
+          </div>
+      </div>
+    </div>
+    <div class="">
+      <button data-bs-dismiss="modal" type="submit" class="btn btn-secondary rounded mx-3"><i class="bi bi-x-square-fill"></i> Hủy</button>
+      <button type="submit" class="btn btn-primary rounded" ng-disabled="registrationForm.$invalid"><i class="bi bi-floppy"></i> Đăng Kí</button>
+    </div>
+</form>

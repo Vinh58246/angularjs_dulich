@@ -1,0 +1,383 @@
+    <!-- banner -->
+    <div id="carouselExampleAutoplaying" class="carousel slide container-fluid mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid" src="https://benthanhtourist.com/uploads/images/banner/2024/tour-bac-au-2024.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://benthanhtourist.com/uploads/images/banner/2024/tour-nhat-ban-sieu-tiet-kiem.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://benthanhtourist.com/uploads/images/banner/2024/du-lich-dai-loan.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- giới thiệu -->
+     <div class="container p-3">
+      <p class="fs-4 fw-bold ">Vì sao bạn nên chọn Happy Tour</p>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="">
+            <img width="120px" src="img/4.png" class="mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Vô vàn lựa chọn</h5>
+              <p class="card-text">Tìm kiếm niềm vui với gần nửa triệu điểm tham quan, phòng khách sạn và nhiều trải nghiệm thú vị</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="">
+            <img width="120px" src="img/4.png" class="mb-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chơi vui, giá tốt</h5>
+                <p class="card-text">Trải nghiệm chất lượng với giá tốt. Tích luỹ Klook credit để được thêm ưu đãi</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="">
+              <img width="120px" src="img/4.png" class="mb-2" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dễ dàng và tiện lợi</h5>
+                  <p class="card-text">Đặt vé xác nhận ngay, miễn xếp hàng, miễn phí hủy, tiện lợi cho bạn tha hồ khám phá</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="">
+                <img width="120px" src="img/4.png" class="mb-2" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Đáng tin cậy</h5>
+                    <p class="card-text">Tham khảo đánh giá chân thực. Dịch vụ hỗ trợ tận tình, đồng hành cùng bạn mọi lúc, mọi nơi</p>
+                    
+                  </div>
+                </div>
+              </div>
+      </div>
+      
+     </div>
+
+     <!-- tuor đang hot -->
+      <div class="container p-3" >
+        <p class="fs-4 fw-bold ">Tour đang hot</p>
+
+        <select class="form-control w-25" ng-model="sort">
+          <option value="">Sắp xếp</option>
+          <option value="price">Giá tăng dần</option>
+          <option value="-price">Giá giảm dần</option>
+         </select>
+
+        <div class="row" >
+          <div class="col-sm-6 col-md-4 col-lg-4 my-1" ng-repeat="p in products | limitTo: 6 | orderBy: sort">
+          <div class="card">
+              <img height="190px" src="img/{{p.image}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><a href="#!chitiet/{{p.id}}">{{p.name}}</a></h5>
+                <p>
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <i class="bi bi-clock"></i> 4 ngày 3 đêm
+                    </div>
+                    <div class="col-6">
+                      <p class="card-text text-end text-danger fw-bold fs-5">{{p.price}} đ</p>
+                    </div>
+                  </div>
+                </p>  
+                  <p><i class="bi bi-calendar2-week"></i> Theo yêu cầu</p>
+                  <p><i class="bi bi-car-front-fill"></i> Bay khứ hồi</p>
+                  <p>
+                    <div class="row">
+                      <div class="col-6 text-start">
+                        <i class="bi bi-star-half"></i> 4-5 sao
+                      </div>
+                      <div class="col-6 text-end">
+                        <a href="#!chitiet" class="btn btn-info">Đặt ngay</a>
+                      </div>
+                    </div>
+                    </p>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+      <p class="text-center">
+        <button class="btn btn-outline-info mt-3">Xem tất cả</button>
+      </p>
+      
+    </div>
+
+    <!-- tour nước ngoài -->
+    <div class="container p-3">
+      <p class="fs-4 fw-bold ">Tour nước ngoài</p>
+      <div class="row" >
+        <div class="col-sm-6 col-md-4 col-lg-4 my-1" ng-repeat="p in products | filter:'Nước ngoài' ">
+        <div class="card">
+            <img height="190px" src="img/{{p.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{p.name}}</h5>
+              <p>
+                <div class="row">
+                  <div class="col-6 text-start">
+                    <i class="bi bi-clock"></i> 4 ngày 3 đêm
+                  </div>
+                  <div class="col-6">
+                    <p class="card-text text-end text-danger fw-bold fs-5">{{p.price}} đ</p>
+                  </div>
+                </div>
+              </p>  
+                <p><i class="bi bi-calendar2-week"></i> Theo yêu cầu</p>
+                <p><i class="bi bi-car-front-fill"></i> Bay khứ hồi</p>
+                <p>
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <i class="bi bi-star-half"></i> 4-5 sao
+                    </div>
+                    <div class="col-6 text-end">
+                      <a href="#!chitiet" class="btn btn-info">Đặt ngay</a>
+                    </div>
+                  </div>
+                  </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <p class="text-center">
+      <button class="btn btn-outline-info mt-3">Xem tất cả</button>
+    </p>
+  </div>
+
+      <!-- tour trong nước -->
+      <div class="container p-3">
+        <p class="fs-4 fw-bold ">Tour trong nước</p>
+        <div class="row" >
+          <div class="col-sm-6 col-md-4 col-lg-4 my-1" ng-repeat="p in products | filter:'Trong nước' ">
+          <div class="card">
+              <img height="190px" src="img/{{p.image}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{p.name}}</h5>
+                <p>
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <i class="bi bi-clock"></i> 4 ngày 3 đêm
+                    </div>
+                    <div class="col-6">
+                      <p class="card-text text-end text-danger fw-bold fs-5">{{p.price}} đ</p>
+                    </div>
+                  </div>
+                </p>  
+                  <p><i class="bi bi-calendar2-week"></i> Theo yêu cầu</p>
+                  <p><i class="bi bi-car-front-fill"></i> Bay khứ hồi</p>
+                  <p>
+                    <div class="row">
+                      <div class="col-6 text-start">
+                        <i class="bi bi-star-half"></i> 4-5 sao
+                      </div>
+                      <div class="col-6 text-end">
+                        <a href="#!chitiet" class="btn btn-info">Đặt ngay</a>
+                      </div>
+                    </div>
+                    </p>
+              </div>
+            </div>
+          </div>
+  
+    
+      </div>
+      <p class="text-center">
+        <button class="btn btn-outline-info mt-3">Xem tất cả</button>
+      </p>
+      
+    </div>
+
+    <!-- địa điểm yêu thích  -->
+     <div class="container p-3">
+      <p class="fs-4 fw-bold ">Điểm đến yêu thích</p>
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+        <img height="350px" src="img/5.jpg" class="card-img" alt="...">
+        <div class="position-absolute bottom-0 text-center text-white">
+          <h5 class="card-title">Vịnh Hạ Long</h5>
+          <p class="card-text">Du lịch Hạ Long luôn hấp dẫn rất nhiều các du khách trong nước và quốc tế...</p>
+          <p class="card-text"><button class="btn btn-outline-white text-white mt-3">Xem thêm</button></p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card">
+        <img height="350px" src="img/6.jpg" class="card-img" alt="...">
+        <div class="position-absolute bottom-0 text-center text-white">
+          <h5 class="card-title">Phố Cổ Hội An</h5>
+          <p class="card-text">Kinh nghiệm du lịch Hội An của những người đi trước chính là "kho tàng" giúp ...</p>
+          <p class="card-text"><button class="btn btn-outline-white text-white mt-3">Xem thêm</button></p>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <div class="card">
+        <img height="300px"  src="img/bentre.jpg" class="card-img" alt="...">
+        <div class="position-absolute bottom-0 text-center text-white">
+          <h5 class="card-title">Bến Tre</h5>
+          <p class="card-text">Bến Tre thuộc miền Tây Nam Bộ, với khí hậu quanh năm nắng ấm. Du khách có thể ghé ...</p>
+          <p class="card-text"><button class="btn btn-outline-white text-white mt-3">Xem thêm</button></p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+        <img height="300px" src="img/8.jpg" class="card-img" alt="...">
+        <div class="position-absolute bottom-0 text-center text-white">
+          <h5 class="card-title">Động Phong Nha Kẻ Bàng</h5>
+          <p class="card-text">Phong Nha Kẻ Bàng là một trong những điểm đến nổi tiếng và hấp dẫn nhất của Việt Nam... </p>
+          <p class="card-text"><button class="btn btn-outline-white text-white mt-3">Xem thêm</button></p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+        <img height="300px" src="img/vungtau.jpg" class="card-img" alt="...">
+        <div class="position-absolute bottom-0 text-center text-white">
+          <h5 class="card-title">Vũng Tàu</h5>
+          <p class="card-text">Là thành phố biển gần TP. Hồ Chí Minh nhất, Vũng Tàu hẳn là một trong những bãi biển ...</p>
+          <p class="card-text"><button class="btn btn-outline-white text-white mt-3">Xem thêm</button></p>
+        </div>
+        </div>
+        </div>
+      </div>
+      
+     </div>
+    
+    <!-- khám phá  -->
+     <div class="container p-3">
+      <p class="fs-4 fw-bold ">Khám phá</p>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <img width="400px" height="350px" src="img/binhthuan.jpg" class="card-img" alt="...">
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h5 class="card-title">Bình Thuận, Việt Nam</h5>
+              <p class="card-text">Bình Thuận nằm cuối vùng duyên hải Nam Trung Bộ, thủ phủ là thành phố Phan Thiết. Bình Thuận nằm cách TP HCM 160 km</p>
+              <p class="card-text"><a href="" class="text-white">Xem thêm...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img width="400px" height="350px" src="img/nhatrang.jpg" class="card-img" alt="...">
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h5 class="card-title">Nha Trang, Việt Nam</h5>
+              <p class="card-text">Nổi tiếng với tên gọi thành phố du lịch, Nha Trang gây ấn tượng với rất nhiều điểm đến vạn người mê</p>
+              <p class="card-text"><a href="" class="text-white">Xem thêm...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img width="400px" height="350px" src="img/dubai.jpg" class="card-img" alt="...">
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h5 class="card-title">Dubai, UAE</h5>
+              <p class="card-text">Đến sân bay quý khách bắt đầu hành trình khám phá thành phố Dubai (thuộc Các Tiểu Vương Quốc Ả Rập Thống Nhất).</p>
+              <p class="card-text"><a href="" class="text-white">Xem thêm...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img width="400px" height="350px" src="img/bali.jpg" class="card-img" alt="...">
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h5 class="card-title">Bali, Indonexia</h5>
+              <p class="card-text">Bali, thiên đường mê đắm và huyền ảo, mang đến cho bạn một hành trình tuyệt vời với những trải nghiệm độc đáo và cuốn hút.</p>
+              <p class="card-text"><a href="" class="text-white">Xem thêm...</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+     </div>
+    
+    <!-- tin tức -->
+      <div class="container-fluid bg-body-secondary p-3">
+<div class="container mb-3 ">
+      <p class="fs-4 fw-bold ">Tin tức và sự kiện</p>
+      <div class="container mt-3">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card border-0">
+                <img height="300px" src="img/3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">5/7/2023</p>
+                  <h5 class="card-title fs-6 text-truncate">DU LỊCH TRỌN VẸN VỚI CHÍNH SÁCH HOÀN 100% CHI PHÍ KHI KHÔNG ĐẠT VISA TẠI LỬA VIỆT TOURS</h5>
+                  <p class="card-text">Du lịch là khoảng thời gian cần thiết để chúng ta rời xa nhịp sống thường ngày, tận hưởng những khoảnh khắc quý giá bên người thân và bạn bè...</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0">
+                  <img height="300px" src="https://www.luavietours.com/wp/wp-content/uploads/2024/07/uu-dai-lua-viet.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">5/7/2023</p>
+                    <h5 class="card-title fs-6 text-truncate">NHẬN NGAY CƠ HỘI DU LỊCH NHẬT BẢN MIỄN PHÍ CÙNG LỬA VIỆT TOURS TẠI AEON MALL</h5>
+                    <p class="card-text">Lửa Việt Tours sẽ đồng hành cùng AEON Việt Nam tại Lễ hội Nhật Bản sẽ từ ngày 04/07 đến 14/07/2024 tại 3 trung tâm Aeon Mall Bình Tân...</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0 ">
+                    <img height="300px" src="https://www.luavietours.com/wp/wp-content/uploads/2024/06/1-nhung-dieu-thu-vi-ve-nhat-ban-chinh-la-quoc-gia-nay-khong-co-thu-do.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">5/7/2023</p>
+                      <h5 class="card-title fs-6 text-truncate">NHỮNG ĐIỀU THÚ VỊ VỀ NHẬT BẢN MÀ CÓ THỂ BẠN CHƯA BIẾT</h5>
+                      <p class="card-text">Nhật Bản, đất nước không chỉ nổi tiếng với nền văn hóa mang đậm chất Á Đông mà còn thu hút khách du lịch với các công trình kiến trúc...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card border-0">
+                      <img height="300px" src="https://www.luavietours.com/wp/wp-content/uploads/2024/06/1-lucerne-noi-tieng-voi-canh-sac-thien-nhien-hai-hoa-va-cac-cong-trinh-kien-truc-co-kinh.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">5/7/2023</p>
+                        <h5 class="card-title fs-6 text-truncate">LUCERNE – VIÊN NGỌC QUÝ GIỮA LÒNG THỤY SĨ KHÔNG THỂ BỎ LỠ</h5>
+                        <p class="card-text">Lucerne – Thụy Sĩ là một thành phố tuyệt đẹp cổ xưa nổi tiếng khắp thế giới với nhiều cảnh đẹp đặc sắc từ những ngọn núi hùng vĩ, hồ ...</p>
+                      </div>
+                    </div>
+                  </div>  
+        </div>
+    </div>
+     </div>
+      </div>

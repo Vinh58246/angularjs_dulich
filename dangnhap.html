@@ -1,0 +1,57 @@
+<!-- <form class="container mb-4" name="registrationForm" ng-submit="dangnhap()" novalidate>
+    <img class="mt-2" width="150px" src="./img/2.png" alt="">
+    <div class="p-3">
+      <h1 class="fs-3 fw-bold">Đăng nhập</h1>
+      <p>Hãy đăng nhập để có trải nghiệm tốt nhất!</p>
+    </div>
+    <hr>
+    <div class="p-3">
+      <form class="row">
+        <div class="mb-3 w-50">
+          <label for="emaildn" class="form-label">Email</label>
+          <input type="text" class="form-control rounded" name="emaildn" ng-model="emaildn" required placeholder="abc@xyz.com">
+          <span class="text-danger" ng-show="registrationForm.emaildn.$touched && registrationForm.emaildn.$invalid">Vui lòng nhập email</span>
+
+        </div>
+        <div class="mb-3 w-50">
+          <label for="password" class="form-label">Mật khẩu</label>
+          <input type="text" class="form-control rounded" name="password" ng-model="password" placeholder="********">
+          <span class="text-danger" ng-show="registrationForm.password.$touched && registrationForm.password.$invalid">Vui lòng nhập mật khẩu</span>
+
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-primary rounded mx-3" ng-disabled="registrationForm.$invalid"><i class="bi bi-floppy"></i> Đăng nhập</button>
+      <button data-bs-dismiss="modal" type="submit" class="btn btn-secondary rounded" ><i class="bi bi-x-square-fill"></i> Hủy</button>
+    </div>
+</form> -->
+
+<form class="container mb-4" name="registrationForm" ng-submit="dangnhap()" novalidate>
+  <img class="mt-2" width="150px" src="./img/2.png" alt="">
+  <div class="p-3">
+    <h1 class="fs-3 fw-bold">Đăng Nhập</h1>
+    <p>Nhận tài khoản Klook và khám phá niềm vui của bạn ở bất cứ đâu</p>
+  </div>
+  <hr>
+  <div class="p-3">
+    <div class="">
+      <div class="mb-3 w-50">
+        <label for="emaildn" class="form-label" >Email</label>
+        <input type="text" class="form-control rounded" name="emaildn" ng-model="emaildn" required placeholder="abc@xyz.com">
+        <span class="text-danger" ng-show="registrationForm.emaildn.$touched && registrationForm.emaildn.$invalid">Vui lòng nhập email</span>
+
+      </div>
+      <div class="col-12 mb-3 w-50">
+        <label for="passworddn" class="form-label">Mật khẩu</label>
+        <input type="text" class="form-control rounded" name="passworddn" ng-model="passworddn" required  placeholder="********">
+        <span class="text-danger" ng-show="registrationForm.passworddn.$touched && registrationForm.passworddn.$invalid">Vui lòng nhập mật khẩu</span>
+      </div>
+
+    </div>
+  </div>
+  <div class="">
+    <button data-bs-dismiss="modal" type="submit" class="btn btn-secondary rounded mx-3"><i class="bi bi-x-square-fill"></i> Hủy</button>
+    <button type="submit" class="btn btn-primary rounded" ng-disabled="registrationForm.$invalid"><i class="bi bi-floppy"></i> Đăng Nhập</button>
+  </div>
+</form>

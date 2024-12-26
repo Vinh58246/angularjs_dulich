@@ -1,0 +1,161 @@
+
+<header>
+    <!-- logo -->
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <img width="150px" src="img/2.png" alt="">
+        <!-- <form class="d-flex input-group" role="search">
+          <input class="form-control me-2" type="Hãy nhập vào" placeholder="Hãy nhập thông tin bạn cần tìm" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Tìm</button>
+        </form> -->
+        <!-- <i class="bi bi-cart4 fs-2 text-danger"></i> -->
+    </div>
+
+    <!-- thanh menu -->
+    <nav class="navbar navbar-expand-lg bg-info mb-3">
+        <div class="container-fluid ">
+          <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+          <!-- <img width="90px" src="img/2.png" alt=""> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#!"><i class="bi bi-house"></i> Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#!gioithieu">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#!danhmuc">Các tua du lịch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#!giohang">Giỏ hàng <span>{{cart.length}}</span></a>
+              </li> 
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tour trong nước 
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Bến Tre</a></li>
+                  <li><a class="dropdown-item" href="#">Tiền Giang</a></li>
+                  <li><a class="dropdown-item" href="#">Long An</a></li>
+                  <li><a class="dropdown-item" href="#">Đồng Tháp</a></li>
+                  <li><a class="dropdown-item" href="#">Vĩnh Long</a></li>
+                  <li><a class="dropdown-item" href="#">Trà Vinh</a></li>
+                  <li><a class="dropdown-item" href="#">Cần Thơ</a></li>
+                  <li><a class="dropdown-item" href="#">An Giang</a></li>
+                  <li><a class="dropdown-item" href="#">Kiêng Giang</a></li>
+                  <li><a class="dropdown-item" href="#">Bạc Liêu</a></li>
+                  <li><a class="dropdown-item" href="#">Sóc Trăng</a></li>
+                  <li><a class="dropdown-item" href="#">Cà Mau</a></li>
+                  <li><a class="dropdown-item" href="#">Hậu Giang</a></li>
+                  <li><a class="dropdown-item" href="#">Vũng Tàu</a></li>
+                  <li><a class="dropdown-item" href="#">Bình Thuận</a></li>
+                  <li><a class="dropdown-item" href="#">Nha Trang</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  
+                </ul>
+              </li> -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tour nước ngoài
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Lào</a></li>
+                  <li><a class="dropdown-item" href="#">Thái</a></li>
+                  <li><a class="dropdown-item" href="#">Nhật</a></li>
+                  <li><a class="dropdown-item" href="#">Dubai</a></li>
+                  <li><a class="dropdown-item" href="#">Indonexia</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#!danhmuc">Xem tất cả</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#!lienhe">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#!phieukhaosat">Phiếu khảo sát</a>
+              </li> -->
+              
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="Hãy nhập vào" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Tìm</button>
+            </form> -->
+            <a class="nav-link p-2 rounded-pill" aria-current="page" href="#!dangki" >Đăng kí <i class="bi bi-person-plus-fill"></i></a>
+            <!-- <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog border rounded-3">
+                <div class="modal-content rounded-3">
+                  <img class="mt-2" width="150px" src="./img/2.png" alt="">
+                  <div class="p-3">
+                    <h1 class="fs-3 fw-bold" id="exampleModalLabel">Đăng kí</h1>
+                    <p>Nhận tài khoản Klook và khám phá niềm vui của bạn ở bất cứ đâu</p>
+                  </div>
+                  <hr>
+                  <div class="modal-body p-3">
+                    <form class="row">
+                      <div class="mb-3">
+                        <label for="inputName" class="form-label">Họ tên</label>
+                        <input type="text" class="form-control rounded" id="inputName" placeholder="Nguyễn Văn A">
+                      </div>
+                      <div class="mb-3">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="text" class="form-control rounded" id="inputEmail4" placeholder="abc@xyz.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="inputPassword4" class="form-label">Mật khẩu</label>
+                        <input type="text" class="form-control rounded" id="inputPassword4" placeholder="********">
+                      </div>
+                      <div class="mb-3">
+                          <label for="inputrePassword4" class="form-label">Nhập lại mật khẩu</label>
+                          <input type="text" class="form-control rounded" id="inputrePassword4" placeholder="********">
+                        </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary rounded"><i class="bi bi-floppy"></i> Đăng Kí</button>
+                    <button data-bs-dismiss="modal" type="submit" class="btn btn-secondary rounded"><i class="bi bi-x-square-fill"></i> Hủy</button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <a class="nav-link p-2 bg-danger rounded-pill" aria-current="page" href="#!dangnhap">Đăng nhập<i class="bi bi-person-badge-fill  text-black"></i></a>
+            <!-- <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog border rounded-3">
+                <div class="modal-content rounded-3">
+                  <img class="mt-2" width="150px" src="./img/2.png" alt="">
+                  <div class="p-3">
+                    <h1 class="fs-3 fw-bold" id="exampleModalLabel">Đăng nhập</h1>
+                    <p>Hãy đăng nhập để có trải nghiệm tốt nhất!</p>
+                  </div>
+                  <hr>
+                  <div class="modal-body p-3">
+                    <form class="row">
+                      <div class="mb-3">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="text" class="form-control rounded" id="inputEmail4" placeholder="abc@xyz.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="inputPassword4" class="form-label">Mật khẩu</label>
+                        <input type="text" class="form-control rounded" id="inputPassword4" placeholder="********">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary rounded"><i class="bi bi-floppy"></i> Đăng nhập</button>
+                    <button data-bs-dismiss="modal" type="submit" class="btn btn-secondary rounded"><i class="bi bi-x-square-fill"></i> Hủy</button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <i class="bi bi-cart4 fs-2 text-danger"></i> -->
+          </div>
+        </div>
+    </nav>
+  </header>
